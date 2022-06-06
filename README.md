@@ -3,7 +3,7 @@
 This is a branch for the book, Think Java: How to Think Like a Computer Scientist, Second Edition, by Allen B. Downey and Chris Mayfield
 
 Link to Book: 
-[Think Java](https://books.trinket.io/thinkjava/)
+[Think Java](https://books.trinket.io/thinkjava2/)
 
 Book Cover: 
 
