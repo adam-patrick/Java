@@ -1,0 +1,189 @@
+// Java Array Examples
+
+// ------------------------------------------------
+// Display Elements of an Array
+
+public static void printArray(int[] a)
+  {
+    System.out.print("{" + a[0]);
+    for (int i = 1; i < a.length; i++)
+      {
+      System.out.print(", " + a[i]);
+      }
+    System.out.println("}");
+  }
+
+// Output
+// {1, 2, 3, 4}
+
+
+// Using Java Class: java.util.Arrays
+
+System.out.println(Array.toString(a));
+
+// Output
+// [1, 2, 3, 4]
+
+// -----------------------------------------------
+
+// Copying Arrays
+
+// Copying a Reference to an Array
+
+double[a] = new double[3];
+double[]  = a;
+
+
+// Copying the Actual Arrays
+
+double[] b = new double[3];
+for (int i = 0, i < 3; i++)
+  {
+    b[i] = a[i];
+  }
+
+// Using Java Class: java.util.Arrays
+
+double[] b = Arrays.copyOf(a, 3);
+
+
+
+// Copying Array of Any Size
+
+double[] b = new double[a.length];
+for (int i = 0, i < a.length; i++)
+{
+  b[i] = a[i];
+}
+
+// Using Java Class: java.util.Arrays
+
+double[] b = Arrays.copyOf(a, a.length);
+
+// ------------------------------------------------
+
+// Traversing Arrays
+
+// Example: Summing Up the Array Values
+
+public static double sum(double[] array)
+{
+  for (int i = 0; i < array.length; i++)
+  {
+    total += array[1];
+  }
+  return total;
+}
+
+// ------------------------------------------------
+
+// Random Numbers in Arrays
+
+public static int[] randomArray(int size)
+{
+    Random random = new Random();
+    int[] a = new int[size];
+    for (int i = 0; i < a.length; i++)
+    {
+        a[i] = random.nextInt(100);
+    }
+    return a;
+}
+
+public static void main(String[] args)
+{
+    int[] array = randomArray(8);
+    printArray(array);
+}
+
+// Output
+
+// {15, 62, 46, 74, 67, 52, 51, 10}
+
+// -----------------------------------------------
+
+// Histograms
+
+public static in inRange(int[] a, int low, int high)
+{
+  int count = 0;
+  for (int i = 0; i < a.length; i++)
+  {
+    if (a[i] >= low && a[i] < high)
+    {
+      count++;
+    }
+  return count;
+  }
+}
+
+public static void main(String[] args)
+{
+  int[] scores = randomArray(30);
+  int a = inRange(scores, 90, 100);
+  int b = inRange(scores, 80, 90);
+  int c = inRange(scores, 70, 80);
+  int d = inRange(scores, 60, 70);
+  int f = inRange(scores, 0, 60);
+}
+
+// ------------------------------------------------
+
+// Enhanced for Loop
+
+
+// Instead of this:
+
+for (int i = 0; i < values.length; i++) {
+    int value = values[i];
+    System.out.println(value);
+}
+
+// It is this:
+
+for (int value : values)
+  {
+    System.out.println(value);
+  }
+
+
+// Histogram Enhanced for Loop
+
+int[] counts = new into[100];
+for (int score: scores)
+{
+  counts[score]++;
+}
+
+// ----------------------------------------------------
+
+// A word is said to be a “doubloon” if every letter that
+// appears in the word appears exactly twice. Write a
+// method called isDoubloon that takes a string and
+// checks whether it is a doubloon. To ignore case,
+// invoke the toLowerCase method before checking.
+
+public class Doubloon {
+
+  public static boolean is Doubloon(String s)
+  {
+    // count the number of times each letter appears
+    int[] counts = new int[26];
+    String lower = s.toLowerCase();
+    for (char letter : lower.toCharArray())
+    {
+      if (count != 0 && count != 2)
+      {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  public static void main(String[] args)
+  {
+        System.out.println(isDoubloon("Mama"));  // true
+        System.out.println(isDoubloon("Lama"));  // false
+  }
+}
