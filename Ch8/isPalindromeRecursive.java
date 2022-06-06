@@ -29,14 +29,18 @@ public class isPalindromeRecursive
 	public static void main (String[] args)
 	{
 		Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the String for check:");
-        String s = scanner.nextLine();
-        /* If function returns true then the string is
-         * palindrome else not
-         */
-        if(isPalindrome(s))
-            System.out.println(s + " is a palindrome");
-        else
-            System.out.println(s + " is not a palindrome");
+        	System.out.println("Enter the String for check:");
+        	String s = scanner.nextLine();
+        	/* If function returns true then the string is
+         	* palindrome else not
+         	*/
+        	if(isPalindrome(s))
+		{
+            		System.out.println(s + " is a palindrome");
+		}
+		else
+		{
+            		System.out.println(s + " is not a palindrome");
+		}
 	}
 }
