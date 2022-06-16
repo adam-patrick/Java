@@ -41,5 +41,76 @@ public class Main {
         result -= 2;
         System.out.println("10 - 2 = " + result);
 
+        boolean isAlien = false;
+        if (isAlien == false) {
+            System.out.println("It is not an alien!");
+            System.out.println("And I am scared of aliens");
+        }
+
+        int topScore = 80;
+        if (topScore < 100) {
+            System.out.println("You got the high score!");
+        }
+
+        // && is logical AND operator
+        int secondTopScore = 60;
+        if ((topScore > secondTopScore) && (topScore < 100)) {
+            System.out.println("Greater than second top score and less than 100");
+        }
+
+        // || is logical OR operator
+        if ((topScore > 90) || (secondTopScore <= 90)) {
+            System.out.println("Either or both of the conditions are true");
+        }
+
+        // = is assignment operator. == is equals-to operator.
+        int newValue = 50;
+        if (newValue == 50) {
+            System.out.println("This is true");
+        }
+
+        // !isChar == NOTisChar or isChar is False.
+        // bitwise operators check for true.
+        boolean isCar = false;
+        if (!isCar) {
+            System.out.println("This is false");
+        }
+
+        // Ternary Operator
+        isCar = true;
+        boolean wasCar = isCar ? true : false;
+        if (wasCar) {
+            System.out.println("wasCar is true");
+        }
+
+        // Challenge
+        double a = 20D;
+        double b = 80.00D;
+        double c = (a + b) * 100;
+        double d = c % 40.00;
+        boolean check = true;
+
+        if (d == 0) {
+            check = true;
+            System.out.println(check + " has no remainder.");
+        }
+        else {
+            check = false;
+            System.out.println(check + " has a remainder");
+        }
+
+
+        // Challenge: Instructor Solution
+        double myFirstValue = 20.00d;
+        double mySecondValue = 80.00d;
+        double myValuesTotal = (myFirstValue + mySecondValue) * 100;
+        System.out.println("MyValuesTotal = " + myValuesTotal);
+        double theRemainder = myValuesTotal % 40.00d;
+        System.out.println("theRemainder = " + theRemainder);
+        boolean isNotRemainder = (theRemainder == 0) ? true : false;
+        System.out.println("isNotRemainder = " + isNotRemainder);
+        if (!isNotRemainder) {
+            System.out.println("Got some remainder");
+        }
     }
 }
