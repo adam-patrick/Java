@@ -25,15 +25,6 @@ public class Main {
         position = calculateHighScorePosition(50);
         displayHighScorePosition("ASweatyPenis", position);
 
-        position = calculateHighScorePosition(1000);
-        displayHighScorePosition("VaginaMonologue", position);
-
-        position = calculateHighScorePosition(500);
-        displayHighScorePosition("FagPin", position);
-
-        position = calculateHighScorePosition(100);
-        displayHighScorePosition("ABigOlDumbass", position);
-
     }
 
     public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
@@ -43,7 +34,8 @@ public class Main {
             finalScore += 2000;
             System.out.println("Your final score was " + finalScore);
             return finalScore;
-        } else {
+        }
+        else {
             return -1; // typically used to indicate an error
         }
     }
@@ -55,19 +47,16 @@ public class Main {
     }
 
     public static int calculateHighScorePosition(int score) {
-        int position = 4;  // assuming position 4 will be returned
         if (score >= 1000) {
-            position = 1;
-        } else if ((score >= 500)) {
-            position = 2;
-        } else if ((score >= 100)) {
-            position = 3;
+            return 1;
+        } else if ((score > 500) && (score < 1000)) {
+            return 2;
+        } else if ((score > 100) && (score < 500)) {
+            return 3;
+        } else {
+            return 4;
         }
-        return position;
-
     }
     // -------------------------------------------------------------
-
-
 
 }
